@@ -1,7 +1,8 @@
 
 # Calculator Java Swing Application
 
-This is a simple calculator application developed in Java Swing. It provides basic arithmetic calculations and keeps a history of the calculations performed.
+This is a simple calculator application developed in Java Swing. It provides basic arithmetic calculations and keeps a history of the calculations performed.<br/><br/>
+![Calculator ScreenShot](https://github.com/DariushSeidy/calculator-java/assets/138073874/01f70891-d956-42db-acb4-384af8201fc0)
 
 ## Features
 
@@ -11,7 +12,9 @@ This is a simple calculator application developed in Java Swing. It provides bas
 - Delete (Del) button to remove the last entered character.
 - Negate (Neg) button to toggle the sign of the current input.
 - History button to view a log of previous calculations.
-- Calculation results are saved to both a text file and a MySQL database.
+- Calculation results are saved to both a text file and a MySQL database.<br/><br/>
+![Database ScreenShot](https://github.com/DariushSeidy/calculator-java/assets/138073874/0184d9fc-6d20-4746-8f19-36d0cd907ea2)
+
 
 ## Usage
 
@@ -43,6 +46,14 @@ This is a simple calculator application developed in Java Swing. It provides bas
 3. Run the application:
    ```
    java Calculator
+   ```
+## Database setup
+1. Create a MySQL database named calculator_results.
+2. Update the username and password variables in Calculator.java with your MySQL credentials.
+   ```
+   String url = "jdbc:mysql://localhost:3306/calculator_results";
+   String username = "your-username";
+   String password = "your-password";
    ```
 ## Contact me
    Feel free to reach out if you have any questions or need further assistance.
