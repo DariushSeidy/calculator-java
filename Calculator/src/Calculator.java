@@ -22,7 +22,7 @@ public class Calculator implements ActionListener{
     private ImageIcon icon = new ImageIcon("calculator-2017-10-10.png");
     
     Calculator(){
-        // Opens the file
+        // Opens the file for writing historical calculations
         try {
             writer = new FileWriter("data.txt", true); // Open the file in append mode
         } catch (IOException e) {
@@ -132,6 +132,7 @@ public class Calculator implements ActionListener{
         frame.add(negativeButton);
         frame.add(historyButton);
         frame.add(textField);
+        // Add a window listener to close the file when the application is closed
         frame.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
@@ -145,6 +146,7 @@ public class Calculator implements ActionListener{
                 }
             }
         });
+        // Add an action listener to open the historical calculation file
         historyButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -215,7 +217,7 @@ public class Calculator implements ActionListener{
         }
     }
     
-    // Calcutes
+    // Calcutes the result based on the operator
     private double performCalculation(double num1, double num2, char operator) {
         switch (operator) {
             case '+':

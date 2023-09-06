@@ -1,18 +1,50 @@
-## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# Calculator Java Swing Application
 
-## Folder Structure
+This is a simple calculator application developed in Java Swing. It provides basic arithmetic calculations and keeps a history of the calculations performed.
 
-The workspace contains two folders by default, where:
+## Features
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Addition (+), subtraction (-), multiplication (x), and division (/) operations.
+- Decimal point (.) support.
+- Clear (C) button to clear the input field.
+- Delete (Del) button to remove the last entered character.
+- Negate (Neg) button to toggle the sign of the current input.
+- History button to view a log of previous calculations.
+- Calculation results are saved to both a text file and a MySQL database.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Usage
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+1. Compile and run the `Calculator.java` file to start the application.
+2. Use the number buttons to input numbers.
+3. Use the operator buttons (+, -, x, /) to select the operation.
+4. Press the "=" button to calculate the result.
+5. Use the Clear (C) button to clear the input field.
+6. Use the Delete (Del) button to remove the last character.
+7. Use the Negate (Neg) button to toggle the sign of the current input.
+8. Click the History button to view the calculation history.
 
-## Dependency Management
+## Dependencies
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- Java SE Development Kit (JDK)
+- MySQL (for database storage)
+
+## Installation
+
+1. Clone this repository to your local machine:
+
+   ```
+   git clone https://github.com/DariushSeidy/calculator-java.git
+   ```
+2. Compile the Calculator.java file:
+   ```
+   javac Calculator.java
+   ```
+3. Run the application:
+   ```
+   java Calculator
+   ```
+## Contact me
+   Feel free to reach out if you have any questions or need further assistance.
+   <br/>
+   seidydariush@gmail.com
